@@ -7,3 +7,12 @@ jobs:
     steps:
       - name: hello
         run: echo Hello,world!
+
+      - name: update
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: 49.232.175.63
+          username: ubuntu
+          key: Agag1994720
+          port: 22
+          script: ls
