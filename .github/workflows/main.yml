@@ -13,6 +13,6 @@ jobs:
         with:
           host: 49.232.175.63
           username: ubuntu
-          key: Agag1994720
+          password: Agag1994720
           port: 22
           script: ls
