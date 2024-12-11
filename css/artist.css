@@ -1,0 +1,389 @@
+/*上方介绍*/
+
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:futura;
+            
+}
+
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura-Book-2.ttf);
+}
+	   .top{
+    background: url(../artist/bc.png);
+    position: relative;
+     background-repeat:no-repeat;
+     background-size:100% auto;
+    margin: 0;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 470px;
+     text-align: center;
+     margin-bottom: 150px;
+ }
+ .logo1{
+        
+        padding-top: 130px;
+        /*opacity: 0.8;*/
+    }
+    .slogan{
+        font-size: 60px;
+        color: white;
+        padding-top: 18px;
+    }
+
+.button1{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.button1:hover{
+    background-color: rgba(255, 255, 255,1); 
+    color: black;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+
+}
+
+    .buttons{
+    margin-top: 55px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*瀑布流*/   
+ .show{
+         animation:scale 1s forwards;
+     }
+
+     @keyframes scale {
+                from{
+                    transform: scale(0);
+                }
+
+               to{
+                   transform: scale(1);
+               }
+     }
+.container{
+        margin: 0 auto;
+        height: auto;   
+        position: relative;
+        
+    
+
+    }
+    .item{
+           
+            /*height: auto;*/
+            /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+                position: absolute;
+            
+             height: auto;
+             width: 380PX;
+           padding: 20px;
+
+              /*clear: both;*/
+        }
+        /*卡片1*/
+        	
+		
+	.Bigname1{
+			height:px;
+			width: px;
+			position: absolute;
+			margin-left:-150px ;
+			margin-top: 140px;
+			/*font-family: Microsoft YaHei;*/
+			font-size: 65px;
+			opacity: 0.3;
+			transform: rotate(-90deg);
+			/*border: solid 1px black;*/
+
+		}
+		.content1{
+			width: 600px;
+			height: 360px;
+			background-color: white;
+			/*border: solid 0.5px black;*/
+			
+			
+			box-shadow: 3px 3px 0px 0px gray;
+			overflow: hidden;
+			
+		}
+		.work1{
+			margin-left: 40px;
+			margin-top: 0px;
+			width:230px ;
+			height: 380px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			/*display: none;*/
+		}
+		.name1{
+			/*font-family:Microsoft YaHei ;*/
+			width:300px;
+			height: 60px;
+			margin-top: 80px;
+			margin-left: 250px;
+			position:absolute;
+			/*border: solid 1px black;*/
+			font-size: 55px;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			text-align: right;
+		}
+		.account1{
+			/*font-family:Microsoft YaHei ;*/
+			width: 180px;
+			height: 20px;
+			margin-top: 160px;
+			margin-left: 300px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			font-size: 12px;
+			color: gray;
+			text-align: right;
+		}
+		.text1{
+			/*font-family:Microsoft YaHei ;*/
+			width: 100px;
+			height: 160px;
+			margin-top: 190px;
+			margin-left: 280px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			font-size: 10px;
+
+		}
+		.circle1{
+			width: 30px;
+			height: 30px;
+			/*border: solid 1px black;*/
+		}
+		#one1{
+			margin-left:560px ;
+			margin-top:260px ;
+			position: absolute;
+		}
+		#two1{
+			margin-left: 560px;
+			margin-top:310px ;
+			position: absolute;
+		}
+		#three1{
+			margin-left:510px ;
+			margin-top:310px ;
+			position: absolute;
+			
+
+		}
+		/*卡片2*/
+
+		.content2{
+			width: 360px;
+			height: 600px;
+			background-color: white;
+			/*border: solid 0.5px black;*/
+			overflow: hidden;
+			
+			box-shadow: 3px 3px 0px 0px gray;
+		}
+		.work2{
+			margin-left: 130px;
+			margin-top: 0px;
+			width:230px ;
+			height: 360px;
+			position: absolute;
+			/*border: solid 1px black;*/
+		}
+		.work2:hover{
+			   filter: brightness(0.5);
+            transition-duration: 0.5s;
+
+		}
+		.name2{
+			/*font-family:Microsoft YaHei ;*/
+			width:360px;
+			height: 60px;
+			margin-left: 20px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			font-size: 55px;
+			letter-spacing: 1.5px;
+			text-align: left;
+			font-weight: bold;
+		}
+		#fir2{
+			margin-top:510px ;
+			position: absolute;
+
+		}
+		#sec2{
+			margin-top:470px ;
+			position: absolute;
+			opacity: 0.5;
+		}
+		#thi2{
+			margin-top:430px ;
+			position: absolute;
+			opacity: 0.2;
+		}
+
+		.account2{
+			/*font-family:Microsoft YaHei ;*/
+			width: 180px;
+			height: 20px;
+			margin-top: 400px;
+			margin-left: 20px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			font-size: 14px;
+			color: gray;
+		}
+		.text2{
+			/*font-family:Microsoft YaHei ;*/
+			width: 90px;
+			height: 155px;
+			margin-top: 5px;
+			margin-left: 20px;
+			position:absolute;
+			color: black;
+			/*border: solid 1px black;*/
+			font-size: 12px;
+			overflow: hidden;
+
+		}
+		.circle2{
+			width: 30px;
+			height: 30px;
+			/*border: solid 1px black;*/
+		}
+		#one2{
+			margin-left:280px ;
+			margin-top:370px ;
+			position: absolute;
+		}
+		#two2{
+			margin-left: 320px;
+			margin-top:370px ;
+			position: absolute;
+		}
+		#three2{
+			margin-left:320px ;
+			margin-top:420px ;
+			position:absolute;
+		}
+
+		/*卡片3*/
+		}
+		.Bigname3{
+			position:absolute;
+			margin-left:10px ;
+			margin-top: 110px;
+			/*font-family: Microsoft YaHei;*/
+			font-size: 28px;
+			opacity: 0.4;
+			/*border: solid 1px black;*/
+
+		}
+		.content3{
+			width:360px;
+			height: 360px;
+			background-color: white;
+			/*border: solid 0.5px black;*/
+			box-shadow: 3px 3px 0px 0px gray;
+			overflow: hidden;
+			margin-top: 20px;
+		}
+		.work3{
+			margin-left: 170px;
+			margin-top: 100px;
+			width:190px ;
+			height: 300px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			/*display: none;*/
+
+		}
+		.work3:hover{
+			   filter: brightness(0.5);
+            transition-duration: 0.5s;
+        }
+		.name3{
+			/*font-family:Microsoft YaHei ;*/
+			width:340px;
+			height: 60px;
+			margin-top: 30px;
+			margin-left: 10px;
+			position:absolute;
+			/*border: solid 1px black;
+*/			font-size: 55px;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			text-align: left;
+		}
+		.account3{
+			/*font-family:Microsoft YaHei ;*/
+			width: 280px;
+			height: 20px;
+			margin-top: 10px;
+			margin-left: 10px;
+			position:absolute;
+			/*border: solid 1px black;*/
+			font-size: 18px;
+			opacity: 0.7;
+			text-align: left;
+		}
+		.text3{
+			/*font-family:Microsoft YaHei ;*/
+			width: 80px;
+			height: 100px;
+			margin-top: 230px;
+			margin-left: 10px;
+			position: absolute;
+			/*border: solid 1px black;*/
+			font-size: 12px;
+			color: gray;
+			overflow: hidden;
+
+		}
+		.circle3{
+			width: 30px;
+			height: 30px;
+			/*border: solid 1px black;*/
+		}
+		#one3{
+			margin-left: 130px;
+			margin-top:320px ;
+			position:absolute;
+			
+		}
+		#two3{
+			margin-left: 130px ;
+			margin-top:270px ;
+			position: absolute;
+		}
+		#three3{
+			margin-left:80px ;
+			margin-top:270px ;
+			position:absolute;
+
+		}

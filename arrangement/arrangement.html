@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sonder-arrangement</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/arrangement.css">
+</head>
+<style>
+		.search-txt{
+			border-bottom: solid;
+			background: none;
+			outline: bottom;
+			float: left;
+			padding: 0;
+			color: grey;
+			font-size: 20px;
+			border-width: 0.5px;
+			line-height: 20px;
+			width: 150px;
+		}
+		</style>
+
+<body>
+	<!-- 导航 -->
+<header>
+	<a href="#" class="logo"><img src="logo.png" width="50px" height="50px"></a>
+	<div class="sousuo">
+	<div class="search-box">
+		
+		<input class="search-txt" type="text" name="" placeholder="Type to search" >
+		<a class="search-btn" href="#"><img src="SEARCH.png" width="40px" height="40px" ></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</div>
+
+	<ul>
+		<li><a href="../index.html" >主页</a></li>
+        <li><a href="../find/find.html">发现</a></li>
+        <li><a href="../vision/vision.html">视野</a></li>
+        <li><a href="../artist/artist.html"style="color: grey;">约稿</a></li>
+        <li><a href="../plus/plus.html">创作</a></li>
+        <li><div class="dropdown">
+        	<span><a href="../mine/mine.html">我的</a></span>
+        	<div class="dropdown-content">
+              <a href="../message/message.html">消息通知</a>
+              <a href="../setting/setting.html">设置</a>
+          	</div>
+      		</div>
+        </li>
+       
+
+        <script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		var header =document.querySelector("header");
+		header.classList.toggle("sticky",window.scrollY >0);
+	})
+</script>
+<script>
+	function openResult(){    /* 绑定事件 */
+		var r = confirm("您确定进行约稿吗？")
+		if (r == true) {
+		window.location.href="../404/404.html"
+		} else {
+			
+		}
+	} 
+</script>
+
+
+	</ul>
+</header>
+<!-- 导航 -->
+<div class="bottom">
+	<div class="top">
+	 	<div class="picture1">
+	 		<a href="#">
+	 			<img src="myy.jpg"  width="130px"; height="130px" style="border-radius:50%;overflow: hidden;">
+	 		</a>
+	 	</div>
+	 	<div class="username">毛嘤嘤</div>
+	 	<div class="account">2020211158</div>
+	 	<div class="introduction">接产品设计图，七天内可出图。</div>
+	</div>
+<div class="item">
+	<div class="line">
+		<div class="left" style="padding-top:50px">约稿数量</div>
+	 	<div class="right"style="padding-top:50px">
+	 		
+          <h3></h3>
+          <div class="number"  style="width: 150px;">
+            <i class = "minus iconfont icon-jianhao"></i>
+            <input type="number" min = "1" step="1" value="1" style="width: 150px;font-size: 16px;">
+            <i class = "plus iconfont icon-jiahao1"></i>
+          </div>
+ 	</div>
+	
+</div>
+<div class="line">
+		<div class="left">稿件名称</div>
+	 	<div class="right"  >
+	 		<input  class="search-txt" type="text" name="" placeholder="请输入作品名称" style="font-size: 16px;width: 150px; ">
+
+	 	</div>
+	</div>	 	
+	<div class="line">
+		<div class="left">公益约稿</div>
+	 	<div class="right">成交后将捐赠成交额5%给山区儿童美术教育计划</div>
+	</div>
+	<div class="line">
+		<div class="left">改稿服务</div>
+	 	<div class="right"><select style="width: 150px;font-size: 16px;">
+			<option value="one">自定义</option>
+			<option value="two">无需改稿</option>
+			<option value="three">改稿1-2次</option>
+			<option value="four">改稿3-5次</option>
+			<option selected="select">请选择：</option>
+		</select></div>
+	</div>
+	<div class="line">
+		<div class="left">交稿方式</div>
+	 	<div class="right"><select style="width: 150px; font-size: 16px;">
+			<option value="one">实体</option>
+			<option value="two">微信</option>
+			<option value="three">邮箱</option>
+			<option value="four">qq</option>
+			<option value="five">其他（请备注）</option>
+			<option selected="select">请选择：</option>
+		</select></div>
+	</div>
+	
+	<div class="line">
+		<div class="left">延期险</div>
+	 	<div class="right"><a href="#"><img src="more.png" style="font-size: 14px; width: 20px"></a></div>
+	</div>
+	<div class="line">
+		<div class="left">交稿日期</div>
+	 	<div class="right"><a href="#"><input type="datetime-local" value="2015-09-24T13:59:59" style="font-size: 16px;" /></a></div>
+	</div>
+	<div class="line">
+		
+		<div class="left"><p style="float: left;">备注: &nbsp;</p><input  class="search-txt" type="text" name="" placeholder="选填，请与画师协商一致。" style="width:300px;float:left;font-size: 14px;" >
+		</div>
+	</div>
+	<div class="line">
+		<div class="left"><a href="" style="text-decoration: none; color: black;">上传相关素材（选填）：</a></div>
+		<div class="left"><img id="upload" src="plus.png" width="50px" style="background-color: gray;" /></div>
+	 	<div class="right"><a href="#"><img src="more.png" style="font-size: 14px; width: 20px"></a></div>
+	</div>
+<div class="line" style="opacity: 0.5;">
+		<hr>
+</div>
+<div class="line">
+	<div class="left">
+			<form action="" method="get">
+				<label><input name="Fruit" type="radio" value="" />匿名约稿</label>
+			</form> 
+	</div>
+	<div class="right" style="padding-top: 50px;">共1幅 &nbsp;&nbsp;&nbsp;&nbsp;合计:612&nbsp;&nbsp;&nbsp;&nbsp; 
+		<input class="button" type="button" onclick="openResult()" value="确认约稿"/ 
+		style="border: 2px solid rgba(255, 255, 255, 1);
+    			  border-radius: 25px;
+    			  background-color: rgba(0, 0, 0, 0.7);
+    			  color: white;
+    			  font-size:18px;
+    			  height:40px;
+    			  width: 100px;">
+
+
+
+	
+	</div>
+</div>
+
+	 	
+	 	
+	 </div>
+	 </div>		
+
+
+</body>
+
+</html>

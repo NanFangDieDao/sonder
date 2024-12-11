@@ -1,0 +1,389 @@
+body{
+	background-color: white;
+}
+.content{
+	width: 80%;
+	margin-top: 15%;
+	
+	 box-shadow: darkgrey 5px 5px 10px 10px ;
+	 margin-left: 165px;
+	margin-right: 190px;
+}
+.name1{
+	/*padding-top: 3%;*/
+	font-size: 80px;
+	opacity: 0.5;
+	z-index:-1;
+	margin-top: -1%;
+	margin-left: 6%;
+	margin-right: 9%;
+	position: absolute;
+}
+.name1{
+	padding-top: 5%;
+	font-size: 90px;
+	opacity: 0.5;
+	z-index: 1
+	margin-left: 5%;
+}
+.picture{
+	position: relative;
+	bottom:10%;
+	padding-top: 17%;
+	padding-left: 8%;
+	width: 100%;
+	padding-bottom: 10%;
+	padding-bottom: 30%;
+}
+.letter{
+	padding-right: 8%;
+	width: 50%;
+	float: right;
+	bottom: 20%;
+	padding-top: 5%;
+}
+.name2 p{
+	float: right;
+	width: 100%;
+	font-size: 40px;
+	text-align: right;
+	padding-bottom: 5%;
+}
+
+.person img{
+	float: right;
+	width: 200px;
+	border-radius:100%; 
+	overflow:hidden;
+	padding-bottom: 5%;
+}
+.nameofperson p{
+	font-size: 30px;
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 5%;
+	padding-right:11.5%;
+}
+.account p{
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 5%;
+	font-size: 16px;
+	opacity: 0.6;
+}
+.signature p{
+	text-align: right;
+	font-size: 20px;
+	float: right;
+	width: 100%;
+	padding-bottom: 3%;
+		padding-right:8%;
+}
+.price{
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 5%;
+	font-size: 30px;
+	opacity: 0.6;
+	position: relative;
+
+}
+.price a{
+			text-decoration: none;
+			color: black;
+
+		}
+		.short{
+			color: black;
+			position: relative;
+			font-size: 18px;
+			float: right
+			width: 100%;
+			text-align: right;
+			color: black;
+			padding-bottom: 5%;
+			padding-left: 50%;
+			padding-top: 5%;
+			/*margin-top:6%;*/
+			
+		}
+		.arrrangement{
+			float: right;
+			width: 100%;
+			width: 100%;
+			position: relative;
+			
+		}
+.intro {
+	padding-left: 1%;
+	margin-top: -17%;
+	float: left;
+	font-size: 16px;
+	opacity: 0.6;
+	width: 60%;
+}
+.buttom{
+			float: right;
+			width: 70%;
+			padding-top: 60px;
+			padding-left: 190px;
+			padding-right: 170px;
+			z-index: 100;
+		}
+		.like{
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.collect{
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.relay{
+			
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.buy{
+			
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.comment1{
+			
+			font-size: 35px;
+			opacity: 0.6;
+			padding-left: 170px;
+			float: left;
+
+			height: 100px;
+			float: left;
+			padding-top: 60px;
+		}
+		.comment2{
+			float: left;
+			padding-top: 20px;
+			padding-left: 190px;
+			padding-right: 190px;
+			height: 150px;
+			padding-bottom: 20px;
+		}
+		.person2{
+			float:left;
+			border-radius:100%;
+			 
+			 margin-right: 30px;
+			 border-radius:50%
+
+		}
+		.name3{
+			padding-top: 30px;
+			
+			font-size: 20px;
+			padding-left: 20px;
+		}
+		.comment3{
+			padding-top: 20px;
+			color: grey;
+		}
+	.box1{
+			
+			
+			background:white;
+			padding-left: 190px;
+			padding-right: 190px;
+			margin-top:70%;
+			width: 100%;
+			
+			position: absolute;
+		
+		}
+		
+		.comment-btn{
+			
+			
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+				padding-bottom:30px;
+			
+			float: right;
+			
+			
+			/*top: 5px;*/
+		}
+		.comment-txt{
+			
+			border: none;
+			background: none;
+			outline: none;
+			float: left;
+			
+			height: 50px;
+			color: black;
+			font-size: 16px;
+			transition: 0.4s;
+			line-height: 20px;
+			width: 380px;
+
+		}
+		/* 确定盒子的大小 */
+.box {
+    position: relative;
+    background-image: url(image/back_.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0;
+    width: 100%;
+    height: 270px;
+    /* 居中 */
+    top: -150px;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    /*border: solid 2px white;*/
+} 
+.imgs {
+	 top: -540px;
+    position: fixed;
+    width: 820px;
+    height: 260px;
+    top:120px;
+    left: 46%;
+    transform: translateX(-50%);
+    /*border: solid 1px white;*/
+}
+/* 让图片都叠在一起 */
+.imgs li {
+    position: absolute;
+    width: 820px;
+    height: 470px;
+    transition: 0.7s;
+    /*border: solid 1px white;*/
+    overflow: hidden;
+}
+/* 给左右按钮设计样式，和定位 */
+.box .left {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: black;
+    border-radius: 100%;
+    /* 添加半透明 */
+    opacity: .3;
+    top: 50%;
+    
+    z-index: 999;
+    /*left: 70px;*/
+
+}
+.box .right {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: black;
+    border-radius: 100%;
+    /* 添加半透明 */
+    opacity: .3;
+    top: 50%;
+    right:70px;
+    z-index: 999;
+}
+/* 给左右按钮添加鼠标移入样式 */
+.left:hover {
+    /* 把透明度挑高一点，让按钮看起来更亮一些 */
+    opacity: .7;
+}
+.right:hover {
+    opacity: .7;
+}
+/* 把图片错开 */
+.imgs .one {
+    transform: translateX(-150px) scale(0.9);
+    z-index: 1;
+    filter: brightness(0.3);
+}
+/* 第二张图片在中间，层级最高 */
+.imgs .two {
+    z-index: 2;
+}
+.imgs .three {
+    transform: translateX(150px) scale(0.9);
+    z-index: 1;
+    filter: brightness(0.3);
+}
+/* 刚开始不显示的图片就放在中间图片的下面 */
+.imgs .four {
+    transform: scale(0.9);
+}
+.imgs .five {
+    transform: scale(0.9);
+}
+.imgs .six {
+    transform: scale(0.9);
+}
+/* 设计小圆圈 */
+/* 定位 */
+.list {
+    position: absolute;
+   top: 600px;
+    left: 50%;
+    /*margin-left: -81px ;*/
+    transform: translateX(-50%);
+    z-index: 777;
+    /*border: solid 1px white;*/
+}
+/* 设计样式 */
+.list li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    bottom: 350px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 10px;
+    margin-top: ;
+    cursor: pointer; 
+}
+/* 小圆圈改变后的样式 */
+.list .change {
+    background-color: white;
+}
+/* 左右两边各一个盒子 */
+.rights{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    height: 255.5px;
+    width: 100px;
+    /*border: solid 1px white;*/
+}
+.lefts{
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    height: 255.5px;
+    width: 100px;
+
+}
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	　<metaname=”viewport”content=”width=device-width,initial-scale=1″/>
+	<meta charset="utf-8">
+	<title>Sonder-mine</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/mine.css">
+	<style type="text/css">
+	
+ .top{
+	background: url(back2.jpg);
+	position: relative;
+	 background-repeat:no-repeat;
+	margin: 0;
+	background-size: 100% 440px;
+	width: 100%;
+	height: 620px;
+	 text-align: center;
+
+}
+	</style>
+</head>
+<body>
+<header>
+	<!-- 导航 -->
+	<a href=" " class="logo"><img src="logo.png" width="60px"  style="padding-top: 3px;"></a>
+	<div class="sousuo">
+	<div class="search-box">
+		
+		<input class="search-txt" type="text" name="" placeholder="Type to search" >
+		<a class="search-btn" href="#"><img src="SEARCH.png" width="40px" height="40px" ></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</div>
+	<ul>
+		<li><a href="../index.html">主页</a></li>
+        <li><a href="../find/find.html">发现</a></li>
+        <li><a href="../vision/vision.html">视野</a></li>
+        <li><a href="../artist/artist.html">约稿</a></li>
+        <li><a href="../plus/plus.html">创作</a></li>
+       <li><div class="dropdown">
+        	<span><a href="../mine/mine.html" style="color: grey;">我的</a></span>
+        	<div class="dropdown-content">
+              
+              <a href="../message/message.html">消息通知</a>
+              <a href="../setting/setting.html">设置</a>
+          	</div>
+      		</div>
+        </li>
+	</ul>
+</header>
+
+<script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		var header =document.querySelector("header");
+		header.classList.toggle("sticky",window.scrollY >0);
+	})
+
+</script>
+<!-- 导航 -->
+<section class="top"> 
+	<div class="ch-name">
+		<p>保罗·西涅克</p>
+	</div>
+	<div class="name">
+		<p>Paul Signac</p> 
+	</div>
+	<div class="account">
+		<p>user account:1737796489 </p> 
+	</div>
+	
+	<div class="head">
+		<div class="attention">
+		<a style="cursor:hand" href="../Fans/attention.html"> 关注：15</a>
+		
+
+	</div>
+	<div class="fan">
+		<a style="pointer-events:hand" href="../Fans/attention.html"> 粉丝：963</a>
+
+	</div>
+	
+	<img src="head.png" style="width:200px; height:200px; border-radius:100%; overflow:hidden;">
+	</div>
+	 <div class="buttons">
+                <a href="../mine/mine.html"><button class="button1" onclick="../mine/mine.html">作品</button></a>
+                <a href="minehistory.html "><button class="button1" onclick="minehistory">历史</button></a>
+                <a href="minelike.html "><button class="button1" onclick="minelike">喜欢</button></a>
+                <a href="minecollect.html "><button class="button1" onclick="minecollect" style="background-color: white;color: black;">收藏</button></a>
+                <a href="../history/history.html "><button class="button1" onclick="#">约稿</button></a>
+               
+            </div>
+	
+</section>
+
+ <div id="con" class="container">
+	
+	<div class="item">
+		<div class="picture">
+			<a href="#"><img src="c9.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="c6.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="c7.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="c8.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="h3.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="h4.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="p4.jpg"></a> 
+			
+		</div>
+		</div>	
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="p5.jpg"></a> 
+			
+		</div>
+		</div>
+		<div class="item">
+		<div class="picture">
+			<a href="#"><img src="p6.jpg"></a> 
+			
+		</div>
+		</div>		
+
+	</div>
+
+<script>
+
+           window.onload = function () {
+               waterFall();
+
+               let container = document.getElementById("con");
+
+               document.onscroll = throttle(function(){
+                   let item = document.getElementsByClassName("item");
+                   if(item[item.length - 1].getBoundingClientRect().top < window.innerHeight){
+                       for(let i = 0 ; i < item.length ; i++){
+                           item[i].className = "item";
+                       }
+                       // for(let i = 0 ; i < 5 ; i++){
+                          	
+                            // for(let i = 1 ; i <= 4 ; i++){
+                                // container.innerHTML += `
+                                             // <div class="item show">
+                                                  // <div class="picture">
+                                                     // <img src="${i}.jpg" alt="">
+                                                  // </div>
+                                             // </div>
+                                // `;
+                            // }
+                        // }
+                       waterFall();
+                   }
+               },1000);
+
+               window.onresize = throttle(function () {
+                   waterFall();
+               },300);
+           };
+
+
+           function throttle(callback,delay) {
+                 let flag = true;
+                 return function () {
+                      if(flag){
+                          flag = false;
+                          setTimeout( ()=> {
+                             callback.bind(this)();
+                             flag = true;
+                          },delay);
+                      }
+                 }
+           }
+
+           function waterFall() {
+                    // 1. 设置container盒子的宽度
+                    //     注意:   浏览器的可视区域的宽度 / 一个item元素的宽度  =  一行的排列的元素的个数
+                    //     注意：  一行的排列的元素的个数 * 一个item元素的宽度
+                    let container = document.getElementById("con");
+                    let item = document.getElementsByClassName("item");
+                    let clientWidth = document.documentElement.clientWidth;
+                    let columnCount = Math.floor(clientWidth / item[0].offsetWidth);
+                    container.style.width = columnCount * item[0].offsetWidth + "px";
+
+
+                    // 2. 设置每一个item元素的排列位置
+                    //     第一行整体的top值都是0   后面的一次找上一行高度最小的容器 在它的下面进行排列
+                    let hrr = []; // 存每一行盒子的高度
+                    for(let i = 0 ; i < item.length; i++){
+                              if(i < columnCount){
+                                  item[i].style.top = "0px";
+                                  item[i].style.left = i * item[0].offsetWidth + "px";
+                                  hrr.push(item[i].offsetHeight);
+                              //    第一行
+                              }else{
+                               // 第一行之后的
+                                  let min = Math.min(...hrr);
+                                  let index = hrr.indexOf(min);
+                                  item[i].style.top = min + "px";
+                                  item[i].style.left = index * item[0].offsetWidth + "px";
+                                  hrr[index] += item[i].offsetHeight;
+                              }
+                    }
+           }
+
+     </script>
+</body>
+</html>

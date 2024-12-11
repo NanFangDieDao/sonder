@@ -1,0 +1,145 @@
+	body{
+		background-color: white;
+	}
+		
+
+		.top{
+			float: left;
+			padding-top: 10%;
+			padding-left: 190px;
+			padding-right: 190px;
+			height: 15%;
+			padding-bottom: 20px;
+			
+		}
+		.picture1{
+			float:left;
+			border-radius:100%;
+			 
+			 margin-right: 30px;
+			 border-radius:50%
+
+		}
+		.username{
+			padding-top: 30px;
+			
+			font-size: 20px;
+			padding-left: 20px;
+		}
+		.account{
+			padding-top: 20px;
+			color: grey;
+		}
+		.button1{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid rgba(0,0,0);
+    border-radius: 25px;
+    background-color: black;
+    color:white;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.button1:hover{
+    background-color: rgba(255, 255, 255,1); 
+    color: black;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+
+}
+.button2{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid rgba(0,0,0);
+    border-radius: 25px;
+    background-color: black;
+    color:white;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.button2:hover{
+    background-color: rgba(255, 255, 255,1); 
+    color: black;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+
+}
+
+    .buttons{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+    height: 6%px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 2%;*/
+    padding-bottom: 2%;
+}
+.button1 a{
+    text-decoration: none;
+    color: white;
+}
+.button2 a{
+    text-decoration: none;
+    color: black;
+}
+ .container{
+        margin: 0 auto;
+        height: auto;   
+        position: relative;
+        
+    
+
+    }
+    .item{
+            width: 380px;
+            height: auto;
+            /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+                position: absolute;
+            
+        }
+        .picture{
+            padding: 5px;
+    
+            height: auto;       
+            /*background-color: black;*/
+            /*position:absolute;*/
+            padding-top: 30px;
+        
+            
+        }
+        .picture img{
+            width: 100%;
+            height: auto;
+            z-index: -1;
+            
+        }
+        .picture img:hover{
+            filter: brightness(0.5);
+            transition-duration: 0.5s;
+        }
+        .show{
+         animation:scale 1s forwards;
+     }
+
+     @keyframes scale {
+                from{
+                    transform: scale(0);
+                }
+
+               to{
+                   transform: scale(1);
+               }
+     }
+
+td{
+	text-align: center;
+	width: 200px;
+	overflow: hidden;
+}

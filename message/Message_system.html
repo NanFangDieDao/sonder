@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sonder-Message</title>
+	<link rel="stylesheet" type="text/css" href="../css/message.css">
+</head>
+<body>
+	<header>
+		<a href=" " class="logo"><img src="logo.png" width="50px" height="50px"></a>
+		<div class="sousuo">
+			<div class="search-box">
+				<input class="search-txt" type="text" name="" placeholder="Type to search" >
+				<a class="search-btn" href="#"><img src="SEARCH.png" width="40px" height="40px" ></a>
+				<i class="fas fa-search"></i>
+ 			</div>
+ 		</div>
+		<ul>
+			<li><a href="../index.html">主页</a></li>
+        <li><a href="../find/find.html">发现</a></li>
+        <li><a href="../vision/vision.html">视野</a></li>
+        <li><a href="../artist/artist.html">约稿</a></li>
+        <li><a href="../plus/plus.html">创作</a></li>
+        <li><div class="dropdown">
+        	<span><a href="../mine/mine.html" style="color: grey;">我的</a></span>
+        	<div class="dropdown-content">
+             
+              <a href="message.html">消息通知</a>
+              <a href="../setting/setting.html">设置</a>
+          	</div>
+      		</div>
+        </li>
+ 		</ul>
+	</header>
+	<script type="text/javascript">
+		window.addEventListener("scroll",function(){
+			var header =document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY >0);
+		})
+	</script>
+	<!-- 导航栏 -->
+
+	<div class="left">
+		<img src="head.png" width="70px" height="70px" id="head">
+		<p class="name">昵称：我叫什么我忘了<br/>账号：1234567890</p>
+		<ul>
+			<li style="border-top: solid 1px rgba(0, 0, 0, 0.3);"><a>消息</a></li>
+			<li><a href="message.html" >收到的回复</a></li>
+  			<li><a href="Message_like.html">收到的喜欢</a></li>
+  			<li><a href="Message_@.html">@我的</a></li>
+  			<li><a href="Message_person.html">私信</a></li>
+  			<li><a href="Message_system.html"style="background-color: rgba(0, 0, 0, 0.3);">系统通知</a></li>
+ 		</ul>
+	</div>
+	<div class="right">
+		<div class="title">
+			&nbsp&nbsp&nbsp系统通知
+			
+			<div class="more"><img src="img/list.png" width="30px" height="30px"></div>
+		</div>
+		<ul class="qian">
+			<li><a><img src="img/1.png"></a></li>
+  			<li><a><img src="img/2.png"></a></li>
+  			<li><a><img src="img/3.png"></a></li>
+  			<li><a><img src="img/4.png"></a></li>			
+  			<li><a><img src="img/5.png"></a></li>
+  			<li><a><img src="img/6.png"></a></li>
+ 		</ul>
+
+ 		<ul class="zhong" id="fir">
+			<li><a href="">Sonder官方</a></li>
+  			<li><a href="">Sonder官方</a></li>
+  			<li><a href="">Sonder官方</a></li>
+  			<li><a href="">Sonder官方</a></li>
+  			<li><a href="">Sonder官方</a></li>
+  			<li><a href="">Sonder官方</a></li>
+ 		</ul>
+
+ 		<ul class="zhong" id="sec">
+			<li><a >我在勾引你</a></li>
+  			<li><a >你居然不知道？</a></li>
+  			<li><a >不可能的，至少不应该</a></li>
+  			<li><a >你在说什么鬼话</a></li>			
+  			<li><a >哦吼</a></li>
+  			<li><a >所以你确定不来？</a></li>
+ 		</ul>
+ 		<ul class="hou" style="margin-left: 88%;">
+			<li><a href=""><button>详情</button></a></li>
+  			<li><a href=""><button>详情</button></a></li>
+  			<li><a href=""><button>详情</button></a></li>
+  			<li><a href=""><button>详情</button></a></li>
+  			<li><a href=""><button>详情</button></a></li>
+  			<li><a href=""><button>详情</button></a></li>
+
+ 		</ul>
+ 		<!-- <button>编辑</button> -->	
+	</div>
+
+</body>
+</html>

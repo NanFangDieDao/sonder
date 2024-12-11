@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sonder-artist</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/artist.css">
+</head>
+</head>
+<style type="text/css">
+	   
+
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:futura;
+            
+}
+
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura-Book-2.ttf);
+}
+</style>
+<body>
+<!-- 导航 -->
+<header>
+	<a href="#" class="logo"><img src="logo.png" width="50px" height="50"></a>
+	<div class="sousuo">
+	<div class="search-box">
+		
+		<input class="search-txt" type="text" name="" placeholder="Type to search" >
+		<a class="search-btn" href="#"><img src="SEARCH.png" width="40px" height="40px" ></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</div>
+
+	<ul>
+		<li><a href="../index.html" >主页</a></li>
+        <li><a href="../find/find.html">发现</a></li>
+        <li><a href="../vision/vision.html">视野</a></li>
+        <li><a href="../artist/artist.html"style="color: grey;">约稿</a></li>
+        <li><a href="../plus/plus.html">创作</a></li>
+        <li><div class="dropdown">
+        	<span><a href="../mine/mine.html">我的</a></span>
+        	<div class="dropdown-content">
+              
+              <a href="../message/message.html">消息通知</a>
+              <a href="../setting/setting.html">设置</a>
+          	</div>
+      		</div>
+        </li>
+
+	</ul>
+</header>
+
+<script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		var header =document.querySelector("header");
+		header.classList.toggle("sticky",window.scrollY >0);
+	})
+</script>
+<!-- 导航 -->
+
+<!-- 上方背景 -->
+<section class="top"> 
+	<div class="logo1">
+		<img src="logo.png" width="200";height="200">
+	</div>
+	<div class="slogan">
+		<p>Color of artist</p> 
+	</div>
+	 <div class="buttons">
+                <button class="button1" onclick="#">摄影</button>
+                <button class="button1" onclick="#">风景</button>
+                <button class="button1" onclick="#">厚涂</button>
+                  <button class="button1" onclick="#">人像</button>
+                    <button class="button1" onclick="#">绘本</button>
+                     <button class="button1" onclick="#">动漫</button>
+                <button class="button1" onclick="#">游戏</button>
+                 <button class="button1" onclick="#">油画</button>
+                  <button class="button1" onclick="#">产品</button>
+    </div>
+		</section>
+		<!-- 上方背景 -->
+		<!-- 瀑布流 -->
+
+
+<div id="con" class="container">
+	<!-- <div class="item"> -->
+		
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="cwy.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">毛嘤嘤</div>
+			<div class="name2" id="sec2">毛嘤嘤</div>
+			<div class="name2" id="thi2">毛嘤嘤</div>
+			<div class="account2">User Account 2020212799</div>
+			<div class="text2">“这是简历，当你看到这里的时候你就知道了这是一篇简历”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="cloud.png" width="190px" ></a></div>
+			<div class="name3">小吴公主</div>
+			<div class="account3">User Account 2020211145</div>
+			<div class="text3">“一段很牛逼的简历”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2">
+				<a href="../detailsofartist/detailsofartist.html"><img src="wtc.png" width="230px" ></a>
+			</div>
+			<div class="name2" id="fir2">硕硕</div>
+			<div class="name2" id="sec2">硕硕</div>
+			<div class="name2" id="thi2">硕硕</div>
+			<div class="account2">User Account 2020210081</div>
+			<div class="text2">“人笨当自强”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="yy.png" width="190px" ></a></div>
+			<div class="name3">陈伟耶</div>
+			<div class="account3">User Account 2020211158</div>
+			<div class="text3">“这个人心情不好，不想写简介”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+	
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="2a.png" width="190px" ></a></div>
+			<div class="name3">Geoffrey</div>
+			<div class="account3">User Account 2020211001</div>
+			<div class="text3">“拳头资深设计师”</div>
+
+		<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+
+		</div>
+		</div>
+	
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="6.png" width="190px" ></a></div>
+			<div class="name3">斉藤和</div>
+			<div class="account3">User Account 2020211006</div>
+			<div class="text3">“月亮、蓝色田野”</div>
+
+		<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+
+		</div>
+		</div>
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="7.png" width="190px" ></a></div>
+			<div class="name3">Prins</div>
+			<div class="account3">User Account 2020211007</div>
+			<div class="text3">“裸眼中的立体城市”</div>
+
+		<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+
+		</div>
+		</div>
+
+			<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="4.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">村田莲尔</div>
+			<div class="name2" id="sec2">村田莲尔</div>
+			<div class="name2" id="thi2">村田莲尔</div>
+			<div class="account2">User Account 2020211004</div>
+			<div class="text2">“古典质感的萌系少女”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		
+			<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="l.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">Nullluckin</div>
+			<div class="name2" id="sec2">Nullluckin</div>
+			<div class="name2" id="thi2">Nullluckin</div>
+			<div class="account2">User Account 2020221008</div>
+			<div class="text2">“no luck in nullluckin”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+			<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="33.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">Valentina</div>
+			<div class="name2" id="sec2">Valentina</div>
+			<div class="name2" id="thi2">Valentina</div>
+			<div class="account2">User Account 2020211002</div>
+			<div class="text2">“玩弄色彩的超现实神秘”</div>
+		<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="Free1.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">菌子啊梵</div>
+			<div class="name2" id="sec2">菌子啊梵</div>
+			<div class="name2" id="thi2">菌子啊梵</div>
+			<div class="account2">User Account 2020112002</div>
+			<div class="text2">“做自己好快乐”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="8.png" width="190px" ></a></div>
+			<div class="name3">Wuestling</div>
+			<div class="account3">User Account 2020211008</div>
+			<div class="text3">“内心可以更响亮，也可以更安静”</div>
+
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+
+		</div>
+		</div>
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="gs.png" width="190px" ></a></div>
+			<div class="name3">林</div>
+			<div class="account3">User Account 2020312002</div>
+			<div class="text3">“今已亭亭如盖矣”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="9.png" width="190px" ></a></div>
+			<div class="name3">Loish</div>
+			<div class="account3">User Account 2020211009</div>
+			<div class="text3">“为什么不能是小马宝莉的粉色？”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="10.png" width="190px" ></a></div>
+			<div class="name3">O'Keefe</div>
+			<div class="account3">User Account 2020312002</div>
+			<div class="text3">“《蜘蛛侠：平行宇宙》艺术总监”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="11.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">山田</div>
+			<div class="name2" id="sec2">山田</div>
+			<div class="name2" id="thi2">山田</div>
+			<div class="account2">User Account 2020211011</div>
+			<div class="text2">“没有风格就是风格”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+			<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="12.png" width="190px" ></a></div>
+			<div class="name3">Oscar</div>
+			<div class="account3">User Account 2020211012</div>
+			<div class="text3">“炫酷而实用”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="13.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">米山舞</div>
+			<div class="name2" id="sec2">米山舞</div>
+			<div class="name2" id="thi2">米山舞</div>
+			<div class="account2">User Account 2020211013</div>
+			<div class="text2">“从GAINAX到“TRIGGER””</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="14.png" width="190px" ></a></div>
+			<div class="name3">Oyhenart</div>
+			<div class="account3">User Account 2020211014</div>
+			<div class="text3">“拳头首席插画师”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="15.png" width="190px" ></a></div>
+			<div class="name3">金政基</div>
+			<div class="account3">User Account 2020211015</div>
+			<div class="text3">“人肉打印机”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+
+<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="16.png" width="190px" ></a></div>
+			<div class="name3">Even</div>
+			<div class="account3">User Account 2020211016</div>
+			<div class="text3">“观点可以对立，而态度不能”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+			<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="17.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">Donglu</div>
+			<div class="name2" id="sec2">Donglu</div>
+			<div class="name2" id="thi2">Donglu</div>
+			<div class="account2">User Account 2020211017</div>
+			<div class="text2">“根植于中国文化的沉浸式环境”</div>
+		<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="18.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">庵野秀明</div>
+			<div class="name2" id="sec2">庵野秀明</div>
+			<div class="name2" id="thi2">庵野秀明</div>
+			<div class="account2">User Account 2020211018</div>
+			<div class="text2">““痞子“导演”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="19.png" width="190px" ></a></div>
+			<div class="name3">Pascal</div>
+			<div class="account3">User Account 2020211019</div>
+			<div class="text3">“空白页使我害怕”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="20.png" width="190px" ></a></div>
+			<div class="name3">王公瑾</div>
+			<div class="account3">User Account 2020211020</div>
+			<div class="text3">“在好莱坞“画图的“”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="21.png" width="190px" ></a></div>
+			<div class="name3">Raphael</div>
+			<div class="account3">User Account 2020211021</div>
+			<div class="text3">“《刺客信条》艺术总监”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="22.png" width="190px" ></a></div>
+			<div class="name3">Zeen</div>
+			<div class="account3">User Account 2020211022</div>
+			<div class="text3">“融入画中的阴森可怖”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="23.png" width="190px" ></a></div>
+			<div class="name3">Guweiz</div>
+			<div class="account3">User Account 2020211023</div>
+			<div class="text3">“被灰色的，模糊的情绪吸引”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="24.png" width="190px" ></a></div>
+			<div class="name3">歌倚酒</div>
+			<div class="account3">User Account 2020211024</div>
+			<div class="text3">“爱画天空的旅人”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="25.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">特特肉</div>
+			<div class="name2" id="sec2">特特肉</div>
+			<div class="name2" id="thi2">特特肉</div>
+			<div class="account2">User Account 2020211025</div>
+			<div class="text2">“有生活气息的创作更动人”</div>
+			<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<!-- <div class="Bigname2">User Name</div> --> -->
+		<div class="content2">
+			<div class="work2"><a href="#"><img src="26.png" width="230px" ></a></div>
+			<div class="name2" id="fir2">高志平</div>
+			<div class="name2" id="sec2">高志平</div>
+			<div class="name2" id="thi2">高志平</div>
+			<div class="account2">User Account 2020211026</div>
+			<div class="text2">“感性保持创作欲，理性精进技术”</div>
+		<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="27.png" width="190px" ></a></div>
+			<div class="name3">乔安</div>
+			<div class="account3">User Account 2020211027</div>
+			<div class="text3">“不要停留在同一个地方”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="28.png" width="190px" ></a></div>
+			<div class="name3">Krenz</div>
+			<div class="account3">User Account 2020211028</div>
+			<div class="text3">“光带来氛围和故事”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+		<div class="item">
+			<div class="content3">
+			<!-- <div class="Bigname3">User&nbspName</div> -->
+			<div class="work3"><a href="#"><img src="29.png" width="190px" ></a></div>
+			<div class="name3">Lock猴</div>
+			<div class="account3">User Account 2020211029</div>
+			<div class="text3">“科幻与复古共存”</div>
+				<a href="#"><div class="circle2" id="one2"><img src="like.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="two2"><img src="collect.png" width="30px"></div></a>
+			<a href="#"><div class="circle2" id="three2"><img src="comment.png" width="27px"></div></a>
+		</div>
+		</div>
+</div>
+   <script>
+
+           window.onload = function () {
+               waterFall();
+
+               let container = document.getElementById("con");
+
+               document.onscroll = throttle(function(){
+                   let item = document.getElementsByClassName("item");
+                   if(item[item.length - 1].getBoundingClientRect().top < window.innerHeight){
+                       for(let i = 0 ; i < item.length ; i++){
+                           item[i].className = "item";
+                       }
+                       // for(let i = 0 ; i < 5 ; i++){
+                           // for(let i = 1 ; i <= 4 ; i++){
+                               // container.innerHTML += `
+                                             // <div class="item show">
+                                                 // <div class="picture">
+                                                     // <img src="${i}.jpg" alt="">
+                                                 // </div>
+                                             // </div>
+                                // `;
+                           // }
+                       // }
+                       waterFall();
+                   }
+               },1000);
+
+               window.onresize = throttle(function () {
+                   waterFall();
+               },300);
+           };
+
+
+           function throttle(callback,delay) {
+                 let flag = true;
+                 return function () {
+                      if(flag){
+                          flag = false;
+                          setTimeout( ()=> {
+                             callback.bind(this)();
+                             flag = true;
+                          },delay);
+                      }
+                 }
+           }
+
+           function waterFall() {
+                    // 1. 设置container盒子的宽度
+                    //     注意:   浏览器的可视区域的宽度 / 一个item元素的宽度  =  一行的排列的元素的个数
+                    //     注意：  一行的排列的元素的个数 * 一个item元素的宽度
+                    let container = document.getElementById("con");
+                    let item = document.getElementsByClassName("item");
+                    let clientWidth = document.documentElement.clientWidth;
+                    let columnCount = Math.floor(clientWidth / item[0].offsetWidth);
+                    container.style.width = columnCount * item[0].offsetWidth + "px";
+
+
+                    // 2. 设置每一个item元素的排列位置
+                    //     第一行整体的top值都是0   后面的一次找上一行高度最小的容器 在它的下面进行排列
+                    let hrr = []; // 存每一行盒子的高度
+                    for(let i = 0 ; i < item.length; i++){
+                              if(i < columnCount){
+                                  item[i].style.top = "0px";
+                                  item[i].style.left = i * item[0].offsetWidth + "px";
+                                  hrr.push(item[i].offsetHeight);
+                              //    第一行
+                              }else{
+                               // 第一行之后的
+                                  let min = Math.min(...hrr);
+                                  let index = hrr.indexOf(min);
+                                  item[i].style.top = min + "px";
+                                  item[i].style.left = index * item[0].offsetWidth + "px";
+                                  hrr[index] += item[i].offsetHeight;
+                              }
+                    }
+           }
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:futura;
+            
+}
+
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura-Book-2.ttf);
+}
+		body{
+			min-height: 101vh;
+			background: url(../plus/background.jpg) no-repeat fixed center;
+  			background-size: cover;
+		}
+		header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: 0.6s;
+			padding: 40px 100px;
+			z-index: 100000;
+		}
+		header.sticky{
+			padding: 5px 100px;
+			background: #000;
+		}
+		header .logo{
+			position: relative;
+			font-weight: 700;
+			color: #fff;
+			text-decoration:none ;
+			font-size: 2em;
+			text-transform: uppercase;
+			opacity: 0.8;
+
+			letter-spacing: 2px;
+			transition: 0.6s;
+		}
+		header ul{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		header ul li{
+			position: relative;
+			list-style: none;
+		}
+		header ul li a{
+			position: relative;
+			margin: 0 15px;
+			text-decoration: none;
+			color: white;
+			letter-spacing: 2px;
+			font-weight: 500px;
+			transition: 0.6s;
+		}
+		/*.banner{*/
+			/*position: relative;
+			width: 100%;
+			height: 100vh;
+			background: url(背景.jpg);
+			background-size:cover ;
+		}*/
+		header.sticky.logo{
+			color: #fff;
+		}
+		header.sticky ul li a{
+			color: #fff;
+		}
+		.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.dropdown-content {
+	  			display: none;
+	  			position: absolute;
+	  			background-color: rgba(0, 0, 0, 1);
+	  			min-width: 180px;
+	  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  			padding: 12px 16px;
+	  			z-index: 1;
+	  			text-align: center;
+			}
+
+			.dropdown:hover .dropdown-content {
+	  			display: block;
+			}
+
+			.dropdown-content a{
+				color: white;
+	  			padding: 12px 16px;
+	  			text-decoration: none;
+	  			display: block;
+			}
+
+			.dropdown-content a:hover{
+				background-color: rgba(105, 105, 105, 0.7);
+			}
+		.sousuo{
+			margin: 0;
+			padding: 0;
+			/*background: #e84118;*/
+			opacity: 0.8;
+		}
+		.search-box{
+			position: absolute;
+			top: 50%;
+			left: 30%;
+			transform:translate(-50%,-50%) ;
+			background: #2f3640;
+			height: 40px;
+			border-radius: 40px;
+			padding: 10px;
+		}
+		.search-btn{
+			color: #e84118;
+			float: right;
+			width: 40px;
+			height: 20px;
+			border-radius: 50%;
+			background: #2f3640;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/*top: 5px;*/
+		}
+		.search-txt{
+			border: none;
+			background: none;
+			outline: none;
+			float: left;
+			padding: 0;
+			color: white;
+			font-size: 16px;
+			transition: 0.4s;
+			line-height: 20px;
+			width: 240px;
+
+		}
+
+		.Out{
+			position: absolute;
+			width: 85%;
+			height: 80vh;
+			top: 15vh;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: white;
+			/*border: solid 1px black;*/
+			box-shadow: 0 1rem 1.5rem rgba(0,0,0,.3),
+  			0 .5rem .5rem rgba(0,0,0,.2);
+  			/*border-radius: 1rem;*/
+  			overflow: hidden;
+  			opacity: 0.75;
+		}
+		.top{
+			position: fixed;
+			float: left;
+			height: 25%;
+			width: 100%;
+			background-color: black;
+		}
+		.back{
+			position: fixed;
+			background-color: white;
+			border-radius: 100%;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.select{
+			position: fixed;
+			margin:6vh 5% 6vh 50% ;
+			text-align: center;
+			line-height: 8vh;
+			width: 45%;
+			height: 8vh;
+			background-color: white;
+			border-radius: 40px;
+		}
+		.content{
+			position: absolute;
+			float: left;
+			top: 160px;
+			left: 60px;
+			height: 48vh;
+			width: 45%;
+			/*border: solid 1px black;*/
+		}
+		.one{
+			position: fixed;
+			margin:1vh 10px ;
+			text-align: center;
+			line-height: 6vh;
+			width: 20%;
+			height: 6vh;
+			background-color: black;
+			border-radius: 40px;
+			color: rgb(256,256,256);
+			/*border: solid 1px black*/
+		}
+		a{
+			text-decoration: none;
+
+		}
+		.two{
+			position: fixed;
+			margin-top:1vh;
+			margin-left: 250px;
+			text-align: center;
+			line-height: 6vh;
+			width: 20%;
+			height: 6vh;
+			background-color: transparent;
+			color: rgb(0,0,0);
+			/*border: solid 1px yellow;*/
+		}
+			
+		}
+		input{
+			border: 0;
+			background-color: transparent;
+			margin: 5px;
+		}
+		#upload{
+			width: 240px;
+			height: 240px;
+			position: absolute;
+			top: 24px;
+			float: left;
+			/*border: solid 1px black;*/
+
+		}
+		.link a{
+			text-decoration: none;
+			opacity: 0.7;
+			padding:46px;
+			font-size: 14px;
+			color: black;
+		}
+		.link{
+			position: absolute;
+			top: 420px;
+			margin-left: 14px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+
+			/*border: solid 1px black;*/
+		}
+		.success{
+			position: absolute;
+			margin-top: 410px;
+			margin-left:900px;
+			/*border: solid 1px black;*/
+		}
+		

@@ -1,0 +1,77 @@
+body{
+	background: url(../arrangement/background.jpg) no-repeat fixed center;
+  	background-size: cover;
+
+	}
+
+	.item{
+		border: solid;
+		border-width: 1px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 2%;
+		float: left;
+		width: 80%;
+		background-color:white ;
+		opacity: 0.75;
+		box-shadow: 0 1rem 1.5rem rgba(0,0,0,.3),
+  		0 .5rem .5rem rgba(0,0,0,.2);
+  		/*border-radius: 1rem;*/
+  		overflow: hidden;
+	}
+	.top{
+		margin-top: 10%;
+		margin-left: 190px;
+		margin-right: 190px;
+			float: none;
+			width: 900px;			
+			height: 15%;
+			padding-bottom: 20px;
+			
+		}
+		.picture1{
+			float:left;
+			border-radius:100%;
+			 
+			 margin-right: 30px;
+			 border-radius:50%
+
+		}
+		.username{
+			padding-top: 30px;
+			font-weight: bold;
+			font-size: 22px;
+			padding-left: 20px;
+			color: white;
+		}
+		.account{
+			padding-top: 18px;
+			color: white;
+		}
+		.introduction{
+            padding-top: 18px;
+            color: white;
+        }
+        .left{
+        	padding: 15px;
+        	float: left;
+        	font-size: 16px;
+        	padding-left: 50px;
+
+        }
+        .right{
+        	float: right;
+        	padding: 15px;
+        	color: grey;
+        	font-size: 16px;
+        	padding-right: 50px;
+        }
+        .line{
+        	/*margin-left: 190px;*/
+		/*margin-right: 190px;*/
+        	float: left;
+        	width: 100%;
+
+
+        }
+

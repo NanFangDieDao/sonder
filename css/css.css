@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.xq .imgbox {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.xq .imgbox img {
+  width: 100%;
+}
+.xq .imgbox .error_btn {
+  width: 50px;
+  height: 50px;
+  background: black;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.xq .imgbox .text {
+  width: 90%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.xq .imgbox .text p {
+  color: #ffffff;
+  font-size: 22px;
+}
+.xq .imgbox .text span {
+  color: white;
+  font-size: 20px;
+  text-indent: 28px;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+.xq .imgbox .zhuoze {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;

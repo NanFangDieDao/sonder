@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sonder-setting</title>
+	<link rel="stylesheet" type="text/css" href="../css/setting.css">
+</head>
+<body>
+	<header>
+		<a href=" " class="logo"><img src="logo.png" width="50px" height="50px"></a>
+		<div class="sousuo">
+			<div class="search-box">
+				<input class="search-txt" type="text" name="" placeholder="Type to search" >
+				<a class="search-btn" href="#"><img src="SEARCH.png" width="40px" height="40px" ></a>
+				<i class="fas fa-search"></i>
+ 			</div>
+ 		</div>
+		<ul>
+			<li><a href="../index.html">主页</a></li>
+        <li><a href="../find/find.html">发现</a></li>
+        <li><a href="../vision/vision.html">视野</a></li>
+        <li><a href="../artist/artist.html">约稿</a></li>
+        <li><a href="../plus/plus.html">创作</a></li>
+        <li><div class="dropdown">
+        	<span><a href="../mine/mine.html">我的</a></span>
+        	<div class="dropdown-content">
+              <a href="../message/message.html">消息通知</a>
+              <a href="../setting/setting.html">设置</a>
+          	</div>
+      		</div>
+        </li>
+ 		</ul>
+	</header>
+	<script type="text/javascript">
+		window.addEventListener("scroll",function(){
+			var header =document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY >0);
+		})
+	</script>
+	<!-- 导航栏 -->
+
+	<div class="left">
+		<ul>
+			<li><a style="font-weight: bold; font-size: 26px;">设置</a></li>
+
+			<li><a href="#fir">账号信息</a></li>
+  			<li><a href="#sec">个人资料</a></li>
+  			<li><a href="#thi">隐私和安全</a></li>
+  			<li><a href="#for">消息通知</a></li>
+  			<li><a href="#fif">帮助与反馈</a></li>
+ 		</ul>
+	</div>
+	<div class="right" id="fir">
+		<ul class="qian" style="border-right:solid 1px black ;">
+			<li><a style="font-weight: bold; font-size: 26px;">账号信息</a></li>
+  			<li><a>账号：</a></li>
+  			<li><a>电话号码：</a></li>
+  			<li><a>电子邮件：</a></li>			
+  			<li><a>社交账号：</a></li>
+  			<li><a>二维码：</a></li>
+ 		</ul>
+
+ 		<ul class="hou">
+			<li><a ></a></li>
+  			<li><a >6739473935</a></li>
+  			<li><a >1234567890</a></li>
+  			<li><a >11234567890@.com</a></li>			
+  			<li><a class="connect">QQ:12374934748<br/>WeChat:1234567890<br/>Weibo:未绑定</a></li>
+  			<li><a ></a></li>
+ 		</ul>
+ 		<button>编辑</button>
+		
+	</div>
+
+	<div class="right" id="sec">
+		<ul class="qian" style="border-right:solid 1px black ;">
+			<li><a style="font-weight: bold; font-size: 26px;">个人资料</a></li>
+  			<li><a>头像：</a></li>
+  			<li><a>昵称：</a></li>
+  			<li><a>性别：</a></li>			
+  			<li><a>主页简介：</a></li>
+  			<li><a>兴趣标签：</a></li>
+ 		</ul>
+
+ 		<ul class="hou">
+			<li><a ></a></li>
+  			<li><a ><img src="head.png" height="40px" width="40px"></a></li>
+  			<li><a >我叫什么我忘了</a></li>
+  			<li><a >男</a></li>			
+  			<li><a class="connect">一段牛逼的简介</a></li>
+  			<li><a >绘画|电影|黑白|+</a></li>	
+ 		</ul>
+ 		<button>编辑</button>
+		
+	</div>
+
+	<div class="right" id="thi">
+		<ul class="qian" style="border-right:solid 1px black ;">
+			<li><a style="font-weight: bold; font-size: 26px;">隐私和安全</a></li>
+  			<li><a>密码：</a></li>
+  			<li><a>访问权限：</a></li>
+  			<li><a>作品版权：</a></li>			
+  			<li><a>浏览历史：</a></li>
+  			<li><a>注销账号：</a></li>
+ 		</ul>
+
+ 		<ul class="hou">
+			<li><a ></a></li>
+  			<li><a href="">查看|修改密码</a></li>
+  			<li><a >一个月内</a></li>
+  			<li><a >为作品添加水印</a></li>			
+  			<li><a class="connect">清空历史</a></li>
+ 			<li><a class="connect">Yes|No</a></li>
+ 		</ul>
+
+ 		
+ 		</ul>
+ 		<button>编辑</button>
+		
+	</div>
+
+	<div class="right" id="for">
+		<ul class="qian" style="border-right:solid 1px black ;">
+			<li><a style="font-weight: bold; font-size: 26px;">消息通知：</a></li>
+  			<li><a>通知推送：</a></li>
+  			<li><a>通知提示音：</a></li>
+  			<li><a>通知类型：</a></li>
+  			<li><a>消息提醒：</a></li>			
+  			<li><a>消息类型：</a></li>
+  			
+ 		</ul>
+
+ 		<ul class="hou">
+			<li><a ></a></li>
+  			<li><a >允许|不允许</a></li>
+  			<li><a >有|无</a></li>
+  			<li><a >被喜欢|被收藏|被关注|系统通知</a></li>			
+  			<li><a class="connect">允许|不允许</a></li>
+  			<li><a >陌生人|好友</a></li>	
+ 		</ul>
+ 		<button>编辑</button>
+		
+	</div>
+
+	<div class="right" id="fif">
+		<ul class="qian" style="border-right:solid 1px black ;">
+			<li><a style="font-weight: bold; font-size: 26px;">帮助与反馈</a></li>
+  			<li><a>联系我们：</a></li>
+  			<li><a></a></li>
+  			<li><a>提交反馈：</a></li>			
+  			<li><a></a></li>
+  			<li><a></a></li>
+
+ 		</ul>
+
+ 		<ul class="hou">
+			<li><a ></a></li>
+  			<li><a >Eamil:12312356@sonder.com<br/>
+  					Weibo:@北京颂德有限公司</a></li>
+  			<li><a ></a></li>
+  			<li><a >说些什么…</a></li>			
+  			<li><a class="connect"><!-- QQ:12374934748<br/>WeChat:1234567890<br/>Weibo:未绑定 --></a></li>
+  			<li><a ></a></li>
+ 		</ul>
+ 		<button>编辑</button>
+		
+	</div>
+
+
+</body>
+</html>

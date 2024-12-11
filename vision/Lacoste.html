@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacoste</title>
+    <style type="text/css">
+     
+             *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:futura;
+            
+}
+
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura-Book-2.ttf);
+}
+
+        body{
+            /*background-color: rgba(0, 0, 0, 1);*/
+            /*min-height: 200vh;
+*/        }
+
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 40px 100px;
+            z-index: 100000;
+            /*border: solid 2px white;*/
+        }
+        header.sticky{
+            padding: 5px 100px;
+            background: #000;
+        }
+        header .logo{
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            text-decoration:none ;
+            font-size: 2em;
+            text-transform: uppercase;
+            opacity: 0.8;
+            letter-spacing: 2px;
+            transition: 0.6s;
+        }
+        header ul{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header ul li{
+            position: relative;
+            list-style: none;
+        }
+        header ul li a{
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.6s;
+        }
+        header.sticky.logo{
+            color: #fff;
+        }
+        header.sticky ul li a{
+            color: #fff;
+        }
+        .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 1);
+                min-width: 180px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+                z-index: 1;
+                text-align: center;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown-content a{
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover{
+                background-color: rgba(105, 105, 105, 0.7);
+            }
+        .sousuo{
+            margin: 0;
+            padding: 0;
+            /*background: #e84118;*/
+            opacity: 0.8;
+            }
+        .search-box{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform:translate(-50%,-50%) ;
+            background: transparent;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .search-btn{
+            color: #e84118;
+            float: right;
+            width: 40px;
+            height: 20px;
+            border-radius: 50%;
+            background:transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*top: 5px;*/
+        }
+        .search-txt{
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: white;
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 20px;
+            width: 240px;
+        }
+        .imgbox2{
+            position: absolute;
+            margin-top: 470px;
+            background-color: black;
+            width: 100%;
+            min-height:550vh ;
+            /*overflow: hidden;*/
+            /*border: solid 1px white;*/
+        }
+
+        .author{
+            color: white;
+            position: absolute;
+            margin-top: -60px;
+            font-size: 14px;
+            margin-left: 930px;
+            letter-spacing: 10px;
+            opacity: 0.7;
+        }
+        .text{
+            color: white;
+            position: absolute;
+            margin-top: -130px;
+            font-size: 30px;
+            margin-left: 20px;
+            letter-spacing: 5px;
+            /*border: solid 1px white;*/
+        }
+        .left{
+            /*float: left;*/
+            margin-top: 240px;
+             border-right: solid 1px white;
+            width: 220px;
+            height: 60vh;
+            color: white;
+            text-align: left;
+            position: absolute;
+            margin-left: 30px;
+            /*border: solid 1px white;*/
+            /*list-style-type: none;*/
+        }       
+        .left ul li{
+            border-bottom: dashed 1px white;
+            width: 210px;
+            /*margin-left: 3vh;*/
+            list-style-type: none;
+        }
+        .left ul li a{
+            /*list-style-type: none;*/
+            text-decoration: none;
+            color: white;
+            opacity: 0.8;
+            line-height: 40px;
+            height: 40px;
+            font-size: 12px;
+            /*font-family: Simsun;*/
+            border-bottom:1px dashed white；
+        }
+        .left ul li a:hover{
+        text-decoration:underline;  /*鼠标放上去有下划线*/
+        }
+        .intro{
+            color: white;
+            position: absolute;
+            margin-top: 160px;
+            font-size: 16px;
+            margin-left: 20%;
+            /*letter-spacing: 15px;*/
+            /*opacity: 0.6;*/
+            width: 60vw;
+             /*border: solid 1px white;*/
+            overflow: hidden;
+        }
+        .qianyan span{
+            color: white;
+            position: absolute;
+            margin-top: 100px;
+            font-size: 16px;
+            margin-left: 24%;
+             letter-spacing: 1px;
+     line-height: 2em;
+            opacity: 0.7;
+            width:58vw ;
+            /*border: solid 1px white;*/
+        }
+        .intro p{
+            color: white;
+            position: absolute;
+            font-size: 16px;
+            margin-left: 35px;
+            letter-spacing: 1px;
+        line-height: 2em;
+            opacity: 0.9;
+            /*border: solid 1px white;*/
+        }
+
+        .intro img{
+            filter: grayscale(50%);
+            overflow: hidden;
+            margin-left: 30px;
+            overflow: hidden;
+        }
+        
+    
+    </style>
+
+</head>
+
+<body style="background-image: url(img/locoste/locoste.jpg);background-size:100%; background-repeat: no-repeat;">
+    <header>
+        <a href=" " class="logo"><img src="logo.png" width="50px" height="50px"></a>
+        <div class="sousuo">
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" >
+                <a class="search-btn" href="#"><img src="SEARCH.png" width="40px" height="40px" ></a>
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <ul>
+            <li><a href="../index.html">主页</a></li>
+        <li><a href="../find/find.html">发现</a></li>
+        <li><a href="../vision/vision.html" style="color: grey;">视野</a></li>
+        <li><a href="../artist/artist.html">约稿</a></li>
+        <li><a href="../plus/plus.html">创作</a></li>
+       <li><div class="dropdown">
+            <span><a href="../mine/mine.html">我的</a></span>
+            <div class="dropdown-content">
+              
+              <a href="../message/message.html">消息通知</a>
+              <a href="../setting/setting.html">设置</a>
+            </div>
+            </div>
+        </li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header =document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY >0);
+        })
+    </script>
+    <!-- 导航栏 -->
+    <div class="xq">
+        <!-- 页面顶部图片以及文字 -->
+        <!-- x号按钮 -->
+        <a href="视野.html" ><div style=" 
+            position: absolute;
+            background-color: transparent;
+            border-radius: 100%;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 10px;
+            opacity: 0.7;
+            z-index: 200000;
+        "><img src="icon/back.png" width="40px" height=" 40px"></div></a>
+        <div class="imgbox2">
+        <!-- 图片上的文字 -->
+            <div class="left">
+                <ul><li><a href="">了解更多：</a></li>
+                    <li>
+                    <li><a href="">《对话昆汀：暴力是人性的叙事手段》</a></li>
+                    <li><a href="">《今敏逝世十周年纪念：…》</a></li>
+                    <li><a href="">《当莫奈只是印象而已》</a></li>
+                    <li><a href="">《Beeple:人类混沌的未来》</a></li>
+                    <li><a href="">《大悲宇宙：文本基因与数字宗教》</a></li>
+                    <li><a href="">《勒内·马格里特————超现实主义凝视》</a></li>
+                </ul>
+            </div>
+            
+            <div class="text">《刺客信条》美术设计背后的故事：还原、重建与夸张</div>
+            <div class="author">作者:三文鱼</div>
+            <div class="qianyan"><span>前言：《刺客信条：起源》的故事背景发生在古埃及，在早期 Raphael 的团队进行了大量的研究，他们阅读了大量的书籍、看了很多电影，还和一些历史学家交谈。甚至还和同事 Martin Deschambault 一起去巴黎和Jean Claude Golvin（法国考古学家、建筑师，专门研究罗马圆形剧场历史）见面。</span></div>
+            <div class="intro">
+                <div><img src="img/locoste/1.jpg"width="100%" style="margin-top: 12vh;"></div><br/><br/>
+                <div><p style="padding-top: 8px;">Raphael Lacoste 曾分别凭借2006年的《波斯王子3：王者无双》以及2017年的《刺客信条：起源》两次获得VES（Visual Effects Society）奖（影视特效界的“奥斯卡”）。<br/><br/>他曾经为了挑战自己而离开了游戏行业，在电影行业中担任数字绘景师和高级概念艺术家，先后参与了《终结者》、《地心历险记》、《死亡飞车》、《惊天战神》、《重生男人》、《木星上行》等项目。</p></div>
+                <div><img src="img/locoste/2.jpg" width="100%" style="margin-top: 30vh; "></div>
+                <div><img src="img/locoste/7.jpg"width="100%"></div>
+                <div><img src="img/locoste/5.jpg"width="100%"></div>
+                <br/><br/>
+                <div><p >Jean 给了他们非常有用的建议，例如埃及最大海港亚历山大是如何建成的、锡瓦是怎样形成的，人们如何生活并建立自己的村庄。Jean 为他们制作了数十幅原画，重塑了孟斐斯、亚历山大、锡瓦、法尤姆等地区和城市，他的这些画是 Raphael 在游戏中重建古埃及历史的最佳基准。<br/><br>2007 年，Beeple 说，在他开始这件作品的时候，Metakovan 甚至买不起电脑，拿着 U 盘蹭别人的电脑写代码。而也是在 2007 年，25 岁的 Beeple 第一次投资股市，目睹了一年后美国股市的大规模崩盘。两人最近终于在 Beeple 的家里见了面，他们唏嘘这奇妙的 14 年，戏剧性地改变了两个除了梦想一无所有的人的命运。</p></div>
+                <div><img src="img/locoste/3.jpg" width="100%" style="margin-top: 35vh;"></div>
+                <!-- <div><img src="img/locoste/6.jpg"width="100%"></div> -->
+                <br/><br/>
+                <div><p style="padding-top:5px">当创建像《起源》这样庞大的世界的时候，工作需要分开，Raphael 有2-3位助手在世界各地工作，并每天进行交流，这对于在整个设计过程中保持视觉标准非常重要。包括在制作《刺客信条：黑旗》时，因为游戏中有大量的场景，包括海洋、城市、丛林、红树林、玛雅遗址、洞穴、水下……</p></div>
+                <div><img src="img/locoste/4.jpg"width="100%" style="margin-top: 20vh;"></div>
+               <!--  <div><img src="img/locoste/5.jpg"width="100%"></div> -->
+
+            </div>
+       </div>
+</body>
+
+</html>

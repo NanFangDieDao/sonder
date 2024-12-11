@@ -1,0 +1,196 @@
+body{
+	background-color: white;
+}
+.content{
+	width: 80%;
+	margin-top: 15%;
+	
+	 box-shadow: darkgrey 5px 5px 10px 10px ;
+	 margin-left: 165px;
+	margin-right: 190px;
+}
+.name1{
+	/*padding-top: 3%;*/
+	font-size: 80px;
+	opacity: 0.5;
+	z-index:-1;
+	margin-top: -3%;
+	margin-left: 6%;
+	margin-right: 19%;
+	position: absolute;
+}
+.name1{
+	padding-top: 10%;
+	font-size: 90px;
+	opacity: 0.5;
+	z-index: 1
+	margin-left: 5%;
+}
+.picture{
+	position: relative;
+	bottom:10%;
+	padding-top: 25%;
+	padding-left: 8%;
+	width: 100%;
+	padding-bottom: 10%;
+}
+.letter{
+	padding-right: 8%;
+	width: 50%;
+	float: right;
+	bottom: 20%;
+	padding-top: 5%;
+}
+.name2 p{
+	float: right;
+	width: 100%;
+	font-size: 40px;
+	text-align: right;
+	padding-bottom: 5%;
+}
+
+.person img{
+	float: right;
+	width: 200px;
+	border-radius:100%; 
+	overflow:hidden;
+	padding-bottom: 5%;
+}
+.nameofperson p{
+	font-size: 30px;
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 5%;
+	padding-right:11.5%;
+}
+.account p{
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 5%;
+	font-size: 16px;
+	opacity: 0.6;
+}
+.signature p{
+	text-align: right;
+	font-size: 20px;
+	float: right;
+	width: 100%;
+		padding-right:8%;
+}
+.intro {
+	padding-left: 1%;
+	padding-top: 27%;
+	float: left;
+	font-size: 16px;
+	opacity: 0.6;
+	width: 100%;
+}
+.buttom{
+			float: right;
+			width: 50%;
+			padding-top: 60px;
+			padding-left: 190px;
+			padding-right: 170px;
+			z-index: 100;
+		}
+		.like{
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.collect{
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.relay{
+			
+			float: right;
+			font-size: 20px;
+
+			
+		}
+		.comment1{
+			
+			font-size: 35px;
+			opacity: 0.6;
+			padding-left: 170px;
+			float: left;
+
+			height: 100px;
+			float: left;
+			padding-top: 60px;
+		}
+		.comment2{
+			float: left;
+			padding-top: 20px;
+			padding-left: 190px;
+			padding-right: 190px;
+			height: 150px;
+			padding-bottom: 20px;
+		}
+		.person2{
+			float:left;
+			border-radius:100%;
+			 
+			 margin-right: 30px;
+			 border-radius:50%
+
+		}
+		.name3{
+			padding-top: 30px;
+			
+			font-size: 20px;
+			padding-left: 20px;
+		}
+		.comment3{
+			padding-top: 20px;
+			color: grey;
+		}
+	.box{
+			
+			
+			background:white;
+			padding-left: 190px;
+			padding-right: 190px;
+			margin-top:70%;
+			width: 100%;
+			
+			position: absolute;
+		
+		}
+		
+		.comment-btn{
+			
+			
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+				padding-bottom:30px;
+			
+			float: right;
+			
+			
+			/*top: 5px;*/
+		}
+		.comment-txt{
+			
+			border: none;
+			background: none;
+			outline: none;
+			float: left;
+			
+			height: 50px;
+			color: black;
+			font-size: 16px;
+			transition: 0.4s;
+			line-height: 20px;
+			width: 380px;
+
+		}
