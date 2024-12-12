@@ -16,8 +16,7 @@ jobs:
           password: Agag1994720
           port: 22
           script: |
-            mkdir -p /home/ubuntu/deploy
-            rm -rf /home/ubuntu/deploy/*
+            rm -rf /www/wwwroot/sonder/*
           
       - name: Copy files
         uses: appleboy/scp-action@master
@@ -27,4 +26,4 @@ jobs:
           password: Agag1994720
           port: 22
           source: "."
-          target: "/home/ubuntu/deploy"
+          target: "/www/wwwroot/sonder"
