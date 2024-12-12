@@ -26,4 +26,4 @@ jobs:
           password: Agag1994720
           port: 22
           source: "."
-          target: "/home/ubuntu/deploy"
+          target: "/home/ubuntu/deploy" 
