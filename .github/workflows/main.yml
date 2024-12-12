@@ -7,16 +7,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      # - name: Deploy to server
-      #   uses: appleboy/ssh-action@v0.1.2
-      #   with:
-      #     host: 49.232.175.63
-      #     username: ubuntu
-      #     password: Agag1994720
-      #     port: 22
-      #     script: |
-      #       rm -rf /www/wwwroot/sonder/* 
           
       - name: Copy files
         uses: appleboy/scp-action@master
@@ -27,3 +17,13 @@ jobs:
           port: 22
           source: "."
           target: "/home/ubuntu/deploy" 
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: 49.232.175.63
+          username: ubuntu
+          password: Agag1994720
+          port: 22
+          script: |
+            cp -rf /home/ubuntu/deploy/* /www/wwwroot/sonder/
