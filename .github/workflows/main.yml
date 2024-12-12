@@ -16,7 +16,7 @@ jobs:
           password: Agag1994720
           port: 22
           script: |
-            rm -rf /www/wwwroot/sonder/*
+            rm -rf /www/wwwroot/sonder/* 
           
       - name: Copy files
         uses: appleboy/scp-action@master
