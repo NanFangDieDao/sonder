@@ -8,7 +8,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
           
-      - name: Copy files
+      - name: Upload files
         uses: appleboy/scp-action@master
         with:
           host: 49.232.175.63
@@ -18,7 +18,7 @@ jobs:
           source: "."
           target: "/home/ubuntu/deploy" 
 
-      - name: Deploy to server
+      - name: Copy files to Web
         uses: appleboy/ssh-action@v0.1.2
         with:
           host: 49.232.175.63
